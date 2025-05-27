@@ -1,8 +1,12 @@
 package com.eos.admin.service;
 
+import com.eos.admin.dto.DetailedFormDTO;
 import com.eos.admin.dto.VendorInfoDTO;
 
+import java.io.IOException;
 import java.util.List;
+
+import org.springframework.web.multipart.MultipartFile;
 
 public interface VendorInfoService {
 
@@ -17,4 +21,6 @@ public interface VendorInfoService {
 
     // Delete VendorInfo by ID
     void deleteVendorInfo(Long id);
+
+	VendorInfoDTO createVendorInfo(DetailedFormDTO detailedFormDTO, MultipartFile chequeImage) throws IOException;
 }
