@@ -7,12 +7,15 @@ import com.eos.admin.entity.BankDetails;
 import com.eos.admin.repository.BankDetailsRepository;
 import com.eos.admin.service.BankDetailsService;
 
+import lombok.extern.slf4j.Slf4j;
+
 import org.modelmapper.ModelMapper;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@Slf4j
 public class BankDetailsServiceImpl implements BankDetailsService {
 
     private final BankDetailsRepository bankDetailRepository;

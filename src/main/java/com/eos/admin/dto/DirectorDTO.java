@@ -5,13 +5,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class DirectorDTO {
-
+    private Long id;
     private String name;
     private String designation;
     private String address;
-    private String phone;   
+    private String phone;
 }
-

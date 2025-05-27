@@ -5,15 +5,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class BankDetailsDTO {
-
     private String bankName;
     private String accountName;
     private String accountNumber;
     private String ifscCode;
     private String branchAddress;
-
     private String chequeImagePath;
 }

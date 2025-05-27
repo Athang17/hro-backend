@@ -8,7 +8,10 @@ import org.springframework.stereotype.Service;
 
 import com.eos.admin.repository.VendorRepository;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Service
+@Slf4j
 public class VendorDetailsServiceImpl implements UserDetailsService{
 	
 	@Autowired

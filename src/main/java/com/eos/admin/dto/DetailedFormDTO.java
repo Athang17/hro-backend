@@ -1,16 +1,17 @@
 package com.eos.admin.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
 
 import java.util.List;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class VendorInfoDTO {
+public class DetailedFormDTO {
 
+    // VENDOR DETAILS
     private Long id;
     private String companyName;
     private String address;
@@ -27,6 +28,7 @@ public class VendorInfoDTO {
     private String serviceTypeOther;
     private boolean declaration;
 
+    // RELATED CHILD TABLES
     private List<DirectorDTO> directors;
     private BankDetailsDTO bankDetails;
 }

@@ -7,12 +7,15 @@ import com.eos.admin.entity.Director;
 import com.eos.admin.repository.DirectorRepository;
 import com.eos.admin.service.DirectorService;
 
+import lombok.extern.slf4j.Slf4j;
+
 import org.modelmapper.ModelMapper;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@Slf4j
 public class DirectorServiceImpl implements DirectorService {
 
     private final DirectorRepository directorRepository;

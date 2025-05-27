@@ -15,10 +15,10 @@ import lombok.Setter;
 @NoArgsConstructor
 @Table(name = "bank_details")
 public class BankDetails {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
     private String bankName;
     private String accountName;
@@ -28,8 +28,8 @@ public class BankDetails {
 
     private String chequeImagePath;
 
-    @OneToOne
-    @JoinColumn(name = "vendor_info_id")
+    @ManyToOne
+    @JoinColumn(name = "vendorid", referencedColumnName = "id", nullable = false)  // Foreign key
     private VendorInfo vendorInfo;
     
 }
